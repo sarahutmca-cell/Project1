@@ -1,1 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: #DDD6CD;
+    font-family: font1;
+
+}
+
+
+h1 {
+    color: #A74141;
+}
+
+h2 {
+    color: #A74141;
+}
+
+p {
+    color: #A74141
+}
+
+@font-face {
+    font-family: font1;
+    src: url(fonts/font1.ttf);
+}
+
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/font2.ttf);
+}
+
+
+.site-header {
+    background-color: #A74141;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+
+}
+
+.site-header img {
+    width: 1000px;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #FFCDCD;
+    cursor: pointer;
+}
+
+.navigation {
+    margin-top: 40px;
+    padding-right: 20px;
+    word-spacing: 10px;
+    font-size: large;
+    font-weight: bold;
+
+
+}
+
+.navigation a:hover {
+    background-color: #b89292;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.hero-grid {
+    background-color: #F5EFE6;
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.spotlight {
+    border: solid 1px
+}
+
+
+.spotlight button {
+    background-color: #FFCDCD;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: font1;
+    color: #A74141;
+}
+
+button:hover {
+    background-color: #fcfcfc;
+
+}
+
+.spotlight img {
+    width: 40%;
+    float: left;
+    padding-right: 20px;
+}
+
+.spotlight h1 {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.spotlight p {
+    margin-left: 0;
+    padding: 20px;
+    font-family: font2;
+    font-size: large;
+
+}
+
+aside img {
+    width: 30%;
+    display: inline-block;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+aside h2 {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+aside {
+    border: solid 1px;
+}
+
+.side-banner a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.side-banner a:hover img {
+    background-color: #A74141;
+    padding: 10px;
+    margin-left: 40px;
+    border: solid 2px;
+
+}
+
+.cards-gallery {
+    background-color: #F5EFE6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 30px;
+    padding: 20px;
+    gap: 20px;
+    border: solid 1px;
+}
+
+
+.cards {
+    background-color: #FFCDCD;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    margin-top: auto;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+
+.cards-gallery h1 {
+    background-color: #F5EFE6;
+    padding: 10px;
+    grid-column: 1/-1;
+    text-align: center;
+
+}
+
+
+.cards img {
+    width: auto;
+    border: solid 1px;
+
+}
+
+.cards-gallery p {
+    font-family: font2;
+
+}
+
+.cards h2 {
+    font-family: font2;
+}
+
+.cards button {
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+    font-family: font2;
+    color: #A74141;
+    cursor: pointer;
+    font-size: large;
+}
+
+.cards button:hover {
+    background-color: #e9d3d3;
+}
+
+
+.site-footer {
+    background-color: #A74141;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+.site-footer p {
+    color: #FFCDCD;
+    font-family: font2;
+    padding: 10px;
+}
+
+
+
+@media (max-width:768px) {
+
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .site-header img {
+        width: 500px;
+        max-width: 100%;
+    }
+
+    .navigation {
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+        word-spacing: 5px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight img {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .spotlight h1 {
+        display: block;
+        margin: 15px;
+    }
+
+    .spotlight button {
+        margin-bottom: 40px;
+        margin-left: 40px;
+
+    }
+
+    .spotlight p {
+        display: block;
+        margin: 15px;
+    }
+
+    .aside img {
+        width: 35%;
+        padding-left: 10px;
+        margin: 15px;
+        margin-right: 5px;
+        gap: 20px;
+    }
+
+    .cards-gallery {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .cards-gallery h1 {
+        grid-column: 1/-1;
+    }
+
+    .cards {
+        width: 90%;
+    }
+
+    .cards img {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+
+    .card button {
+        margin: 10px;
+    }
+
+    .site-footer {
+        align-items: center;
+        gap: 10px;
+    }
+
+}

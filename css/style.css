@@ -156,6 +156,7 @@ aside {
     padding: 20px;
     gap: 20px;
     border: solid 1px;
+    margin-bottom: 20px;
 }
 
 
@@ -167,6 +168,7 @@ aside {
     margin-top: auto;
     padding: 20px;
     justify-content: center;
+    gap: 10px;
 
 }
 
@@ -316,3 +318,47 @@ aside {
 
 
 /*DETAIL HTML BEGINS*/
+
+.detail-layout {
+    background-color: #DDD6CD;
+
+}
+
+.detail-hero {
+    background-color: #F5EFE6;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+}
+
+.detail-hero p {
+    font-family: font2;
+    padding: 10px;
+    font-size: large;
+    font-style: italic;
+    margin-left: 30px;
+
+}
+
+
+.detail-hero h1 {
+    padding: 20px;
+    font-size: 50px;
+    font-family: font1;
+}
+
+
+.detail-hero em {
+    font-size: x-small;
+    padding-left: 20px;
+    color: #A74141;
+}
+
+
+.detail-hero img {
+    width: 700px;
+    gap: 10px;
+    margin-top: 10px;
+
+
+}

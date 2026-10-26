@@ -217,6 +217,7 @@ aside {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    border: solid 1px;
 }
 
 
@@ -315,12 +316,9 @@ aside {
 
 
 
-
-
-/*DETAIL HTML BEGINS*/
-
 .detail-layout {
     background-color: #DDD6CD;
+    margin-top: 30px;
 
 }
 
@@ -329,36 +327,134 @@ aside {
     display: flex;
     justify-content: space-between;
     border: solid 1px;
+
+
 }
 
 .detail-hero p {
     font-family: font2;
+    font-size: larger;
+    margin-left: 20px;
     padding: 10px;
-    font-size: large;
-    font-style: italic;
-    margin-left: 30px;
+
 
 }
 
 
 .detail-hero h1 {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 50px;
     font-family: font1;
+    text-align: center;
+
 }
 
 
 .detail-hero em {
+    display: block;
     font-size: x-small;
     padding-left: 20px;
+    margin-top: 15px;
     color: #A74141;
 }
 
 
 .detail-hero img {
-    width: 700px;
+    width: 30%;
+    margin-right: 50px;
     gap: 10px;
     margin-top: 10px;
 
+
+}
+
+
+.content-grid {
+    background-color: #F5EFE6;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    border: solid 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.bigside img {
+    width: 20%;
+    margin: 15px;
+    border: solid 1px;
+
+}
+
+.bigside {
+    text-align: center;
+}
+
+
+.bigside h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.bigside h2 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.bigside p {
+    font-family: font2;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin: 20px;
+
+}
+
+.secsidebar {
+    padding: 25px;
+    padding-right: 20px;
+}
+
+.secsidebar h2 {
+    font-family: font1;
+    color: #A74141;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.secsidebar h1 {
+    font-family: font1;
+    color: #A74141;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+
+.secsidebar ol {
+    font-family: font2;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.secsidebar li {
+    font-family: font2;
+    margin-bottom: 8px;
+}
+
+.secsidebar p {
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    font-family: font2;
 
 }

@@ -165,7 +165,6 @@ aside {
     display: flex;
     flex-direction: column;
     border: solid 1px;
-    margin-top: auto;
     padding: 20px;
     justify-content: center;
     gap: 10px;
@@ -197,10 +196,12 @@ aside {
     font-family: font2;
 }
 
+
 .cards button {
     padding: 10px;
+    margin-top: auto;
+    width: 80%;
     text-align: left;
-    margin: 10px;
     font-family: font2;
     color: #A74141;
     cursor: pointer;
@@ -229,7 +230,7 @@ aside {
 
 
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
     .site-header {
         flex-direction: column;
@@ -275,7 +276,7 @@ aside {
         margin: 15px;
     }
 
-    .aside img {
+    aside img {
         width: 35%;
         padding-left: 10px;
         margin: 15px;
@@ -294,7 +295,7 @@ aside {
     }
 
     .cards {
-        width: 90%;
+        min-width: 0;
     }
 
     .cards img {
@@ -303,9 +304,6 @@ aside {
         align-self: center;
     }
 
-    .card button {
-        margin: 10px;
-    }
 
     .site-footer {
         align-items: center;
@@ -361,6 +359,8 @@ aside {
 
 
 .detail-hero img {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin-right: 50px;
     gap: 10px;
@@ -457,4 +457,72 @@ aside {
     margin-bottom: 0px;
     font-family: font2;
 
+}
+
+
+@media (max-width:767px) {
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 1px;
+    }
+
+    .detail-layout {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .detail-hero {
+        flex-direction: column;
+        align-items: center;
+        font-size: medium;
+        padding-top: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    .detail-hero h1 {
+        font-size: x-large;
+        padding-top: 50px;
+        padding-bottom: 5px;
+        margin: 0;
+
+    }
+
+    .detail-hero p {
+        padding-left: 0;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .detail-hero img {
+        display: flex;
+        width: 60%;
+        max-width: 400px;
+        margin: 10px;
+
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .bigside {
+        text-align: center;
+        min-width: 0;
+    }
+
+    .bigside img {
+        width: 40%;
+        max-width: 180px;
+        margin: 10px;
+    }
 }
